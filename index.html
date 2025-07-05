@@ -4,65 +4,334 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Cacayfri - The Encyclopedia of Poop</title>
-	<!-- CSS is imported via src/main.js -->
+	<meta name="description" content="Cacayfri is the ultimate troll encyclopedia of poop, featuring trivia, quizzes, user stories, and more ridiculous content." />
+	<meta name="keywords" content="poop, trivia, quiz, encyclopedia, troll site" />
+	<meta name="author" content="Cacayfri Team" />
+	<meta property="og:title" content="Cacayfri - The Encyclopedia of Poop" />
+	<meta property="og:description" content="Dive into Cacayfri for daily poop trivia, quizzes, and unforgettable crapper content." />
+	<meta property="og:type" content="website" />
+	<link rel="stylesheet" href="/src/style.css" />
+	<link rel="stylesheet" href="/src/css/layout.css" />
+	<link rel="stylesheet" href="/src/css/components.css" />
+	<script type="module" src="/src/main.js"></script>
 </head>
 <body>
 	<header>
-		<!--
-			NOTE: I couldn't be bothered to get the "poop" SVG icon code directly.
-			You can find it here and copy/paste it instead of the SVG below if you really care:
-			https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/black/svg/1F4A9.svg
-			It's a royalty-free icon (CC BY-SA 4.0), apparently.
-		-->
-		<svg class="logo" height="100" viewBox="0 0 36 36" width="100">
-			<path d="M31.946 22.257C31.477 20.912 28.971 17 24 17c0 0 1-1 1-3 0-2-2-3-2-3 0 0 .016-.999-1-2-1-1-3-1-3-1 0 0 1-1 1-3 0-1.375-1-3-4-3S9 6 9 9c0 1 1 2 1 2s-3 1-3 4c0 2 2 3 2 3-4 0-7 2.912-7.5 5.257C.352 24.602 0 25 0 27c0 4 4.714 6 18 6s18-2 18-6c0-2-.352-2.398-2.054-4.743z" fill="#6b4a2f"/>
-			<ellipse cx="12.5" cy="26" rx="3.5" ry="2" fill="#a87e5e"/>
-			<ellipse cx="23.5" cy="26" rx="3.5" ry="2" fill="#a87e5e"/>
-		</svg>
-		<h1>Cacayfri</h1>
-		<p>The encyclopedia that's full of crap.</p>
+		<div class="header-top">
+			<svg class="logo" height="100" viewBox="0 0 36 36" width="100">
+				<path d="M31.946 22.257C31.477 20.912 28.971 17 24 17c0 0 1-1 1-3 0-2-2-3-2-3 0 0 .016-.999-1-2-1-1-3-1-3-1 0 0 1-1 1-3 0-1.375-1-3-4-3S9 6 9 9c0 1 1 2 1 2s-3 1-3 4c0 2 2 3 2 3-4 0-7 2.912-7.5 5.257C.352 24.602 0 25 0 27c0 4 4.714 6 18 6s18-2 18-6c0-2-.352-2.398-2.054-4.743z" fill="#6b4a2f"/>
+				<ellipse cx="12.5" cy="26" rx="3.5" ry="2" fill="#a87e5e"/>
+				<ellipse cx="23.5" cy="26" rx="3.5" ry="2" fill="#a87e5e"/>
+			</svg>
+			<div class="title-group">
+				<h1>Cacayfri</h1>
+				<p>The encyclopedia that's full of crap.</p>
+			</div>
+		</div>
+		<nav class="sitemap">
+			<ul>
+				<li><a href="#subtle-art">The Subtle Art of Poop</a></li>
+				<li><a href="#poop-of-the-day">Poop of the Day</a></li>
+				<li><a href="#science">The Science of Excrement</a></li>
+				<li><a href="#famous-poopers">Famous Poopers</a></li>
+				<li><a href="#trivia">Expanded Poop Trivia</a></li>
+				<li><a href="#philosophy">Philosophical Questions</a></li>
+				<li><a href="#quiz">Cacayfri Poop Quiz</a></li>
+				<li><a href="#submissions">User Submissions</a></li>
+				<li><a href="#testimonials">Totally Authentic Testimonials</a></li>
+				<li><a href="#shop">Cacayfri Shop</a></li>
+				<li><a href="#blog">Cacayfri Blog</a></li>
+				<li><a href="#events">Upcoming Events</a></li>
+				<li><a href="#newsletter">Newsletter Signup</a></li>
+				<li><a href="#faqs">Frequently Asked Questions</a></li>
+				<li><a href="#contact">Contact Us</a></li>
+				<li><a href="#expert-interviews">Expert Interviews</a></li>
+			</ul>
+		</nav>
 	</header>
 	<main>
-		<article>
+		<article id="subtle-art">
 			<h2>The Subtle Art of Poop</h2>
 			<p>Since the dawn of time, humanity has had a complex relationship with its own creations. Among them, the most humble, the most natural, and yet the most reviled: poop. Here at Cacayfri, we pay tribute to this daily work of art, exploring its most surprising facets and, dare we say, philosophical implications. You're welcome.</p>
+			<h3>Historical Perspectives</h3>
+			<p>Archaeological digs reveal ancient latrines and coprolites, showing that humans studied and even collected their excrement tens of thousands of years ago. Poop shaped rituals, medicine, and diet.</p>
+			<h3>In Popular Culture</h3>
+			<p>From viral memes to avant-garde gallery pieces, poop has been a recurring motif. Remember the seminal 'poop emoji'? It's now a staple of digital conversation and art installations worldwide.</p>
 		</article>
-		<article>
+		<article id="poop-of-the-day">
 			<h2>Poop of the Day</h2>
 			<p id="poop-of-the-day">Bristol Type 4: Like a smooth, soft sausage or snake. A timeless classic, for the unoriginal.</p>
 		</article>
-		<article>
-			<h2>The Gallery of Masterpieces</h2>
-			<p>Coming soon: a curated collection of our finest finds, immortalized for your viewing pleasure. Try not to get too emotional.</p>
-		</article>
-		<article>
-			<h2>Poop Trivia (Because Knowledge is Power... sort of)</h2>
+		<article id="science">
+			<h2>The Science of Excrement</h2>
+			<p>Did you know that your gut flora is actually a bustling metropolis of bacteria? It works tirelessly to break down food, synthesize vitamins, and create the final masterpiece you contribute to daily. Talk about a productive ecosystem!</p>
 			<ul>
-				<li>The average human produces about 128 grams of poop per day. Congratulations?</li>
-				<li>The world record for the longest poop is allegedly 7.92 meters. Someone really measured that—ambition knows no bounds.</li>
-				<li>Pandas poop up to 40 times a day. Aim high.</li>
+				<li>98% Water: The secret to smooth operations.</li>
+				<li>2% Solids: Fiber, bacteria, undigested food, and mystery.</li>
+			</ul>
+			<h3>Digestive Journey</h3>
+			<p>Your meal travels from mouth to stomach, then winds through the small intestine before the large intestine reclaims water and forms solids. It's a marvel of biology!</p>
+			<h3>Health Indicators</h3>
+			<p>Color, shape, and consistency can reveal diet quality and gut health. Ideal poop is brown, smooth, and moderated in size. Odd hues? Consult a professional.</p>
+			<h3>Untold Scientific Oddities</h3>
+			<ul>
+				<li>Poop can reach exit velocities of up to 3&nbsp;m/s after a particularly spicy meal—scientists call this the <em>Taco Thrust</em>.</li>
+				<li>Researchers at MIT once 3-D-printed a perfect replica of a wombat cube for aerodynamic testing. It flew surprisingly well.</li>
+				<li>The longest recorded lab study of poop smell gradients concluded that the stench travels faster than the speed of sound in small bathrooms. (Peer review pending.)</li>
 			</ul>
 		</article>
-		<article>
-			<h2>Ask the Philosophers</h2>
-			<p>"If a poop falls in the woods and no one is around to smell it, does it still stink?" — Probably yes, but nice try.</p>
+		<article id="famous-poopers">
+			<h2>Famous Poopers</h2>
+			<p>Even the greats had bowel movements:</p>
+			<ol>
+				<li>Albert Einstein: Once calculated the speed of his poop.</li>
+				<li>Leonardo da Vinci: Sketched the perfect poop trajectory.</li>
+				<li>Cleopatra: Bathing in poop or so they say.</li>
+				<li>Isaac Newton: Discovered gravity from a falling apple, but was truly inspired by a different kind of falling object in the outhouse.</li>
+				<li>William Shakespeare: Famously wrote, "To poop, or not to poop, that is the question."</li>
+				<li>Marie Curie: Discovered two new elements, Polonium and Radium, but her secret third discovery, "Turdium," was flushed from the history books.</li>
+			</ol>
+			<h3>Modern Legends</h3>
+			<ul>
+				<li>Elon Musk: Rumored to schedule his bathroom breaks with rocket precision.</li>
+				<li>Beyoncé: Renowned for impeccable timing, on stage and off.</li>
+				<li>The Beatles: Their hit song "Let It Be" was originally "Let It Pee," but they changed it to be more radio-friendly. The B-side, "The Long and Winding Load," was also scrapped.</li>
+			</ul>
 		</article>
-		<article>
+		<article id="trivia">
+			<h2>Expanded Poop Trivia</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>Trivia Fact</th>
+						<th>Detail</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Daily Average</td>
+						<td>128 grams per day</td>
+					</tr>
+					<tr>
+						<td>World Record</td>
+						<td>7.92 meters in length</td>
+					</tr>
+					<tr>
+						<td>Pandas</td>
+						<td>Up to 40 times a day</td>
+					</tr>
+					<tr>
+						<td>Space Poop</td>
+						<td>Astronauts use special bags</td>
+					</tr>
+					<tr>
+						<td>Insects</td>
+						<td>Certain caterpillars use poop chains to deter predators.</td>
+					</tr>
+					<tr>
+						<td>Spicy Foods</td>
+						<td>Capsaicin from chili peppers dramatically accelerates digestion.</td>
+					</tr>
+				</tbody>
+			</table>
+		</article>
+		<article id="philosophy">
+			<h2>Philosophical Questions</h2>
+			<p>"If a poop falls in the woods and no one is around to smell it, does it still stink?" — Probably yes, but nice try.</p>
+			<p>"Is poop art if no one cares about it?" — Absolutely not, but we do.</p>
+			<p>"Can poop be performance art?" — Only if it's staged in a museum.</p>
+			<p>"Does digital poop count?" — Emojis say yes.</p>
+			<p>"If you poop in a dream, do you need to wipe in reality?" — Only if you're a method actor.</p>
+			<p>"What is the sound of one butt cheek clapping?" — Ask a philosopher after a bean burrito.</p>
+		</article>
+		<article id="quiz">
+			<h2>Cacayfri Poop Quiz</h2>
+			<form class="quiz" id="poop-quiz">
+				<label>
+					What Bristol type is described as smooth and soft?
+					<select>
+						<option value="1">Type 1</option>
+						<option value="2">Type 2</option>
+						<option value="3">Type 3</option>
+						<option value="4">Type 4</option>
+					</select>
+				</label>
+				<label>
+					How many grams of poop does an average human produce daily?
+					<input type="text" />
+				</label>
+				<label>
+					What percentage of poop is water?
+					<input type="text" />
+				</label>
+				<label>
+					Which animal leaves cube-shaped poop?
+					<select>
+						<option value="wombat">Wombat</option>
+						<option value="elephant">Elephant</option>
+						<option value="goat">Goat</option>
+					</select>
+				</label>
+				<button type="button" onclick="evaluateQuiz()">Submit Quiz</button>
+			</form>
+		</article>
+		<article id="submissions">
+			<h2>User Submissions</h2>
+			<form id="user-submissions">
+				<label>
+					Share your wildest poop story:
+					<textarea rows="3"></textarea>
+				</label>
+				<button type="button" onclick="submitStory()">Submit</button>
+			</form>
+			<p>Share a photo of your poop art for a chance to be featured on our front page!</p>
+		</article>
+		<article id="testimonials">
 			<h2>Totally Authentic Testimonials</h2>
 			<blockquote>"I visited Cacayfri and my IQ dropped ten points. Worth it." – Some Genius</blockquote>
 			<blockquote>"Finally, a website that speaks to my inner child." – Your Bathroom</blockquote>
+			<blockquote>"If this site were a meal, it'd be a banquet." – Hungry Visitor</blockquote>
+			<blockquote>"This website cured my constipation just from laughing so hard." – A Relieved Reader</blockquote>
+			<blockquote>"I showed this to my therapist. Now I have two therapists." – Anonymous</blockquote>
+			<blockquote>"My life was dull and grey. Then I found Cacayfri. Now my life is dull and brown. An improvement!"</blockquote>
+			<blockquote>"I used to think I was full of crap. Now I know I'm a connoisseur. Thank you, Cacayfri."</blockquote>
 		</article>
-		<article>
-			<h2>Disclaimer</h2>
-			<p>All content is for educational purposes only. If you feel offended, consider it a free personality test—you failed.</p>
+		<article id="shop">
+			<h2>Cacayfri Shop</h2>
+			<p>Coming soon: merch that will absolutely embarrass you. Stay tuned for poop-themed socks, mugs, and more!</p>
+			<ul>
+				<li>Poop socks – $9.99</li>
+				<li>Poop mug – $12.99</li>
+				<li>Poop T-shirt – $19.99</li>
+				<li>Edible glitter for sparkly results – $29.99</li>
+				<li>"Poop of the Month" subscription box – $49.99/mo</li>
+				<li>NFTs of famous poops – Priceless</li>
+				<li>The "Executive" Desk Plunger – $79.99</li>
+				<li>Toilet Paper printed with your enemy's face – $39.99</li>
+				<li>A "Who Farted?" board game – $24.99</li>
+			</ul>
+		</article>
+		<article id="blog">
+			<h2>Cacayfri Blog</h2>
+			<div class="blog-list">
+				<div class="blog-post">
+					<h3>Top 10 Poop Facts You Never Knew</h3>
+					<p>Think you know poop? Think again. We've compiled the most unexpected truths and myths busted.</p>
+				</div>
+				<div class="blog-post">
+					<h3>The Art of Poop Photography</h3>
+					<p>Lighting, angles, and presentation tips to showcase your masterpiece (or misfire) with flair.</p>
+				</div>
+				<div class="blog-post">
+					<h3>How to Train Your Poop</h3>
+					<p>Learn routines, fiber timing, and hydration hacks to predict your schedule like clockwork.</p>
+				</div>
+			</div>
+		</article>
+		<article id="events">
+			<h2>Upcoming Events</h2>
+			<ul>
+				<li>International Poop Day - July 17, 2025</li>
+				<li>Poop Art Exhibition - August 1-3, 2025, Amsterdam</li>
+				<li>Virtual Tour of World's Largest Toilet - September 2025</li>
+			</ul>
+			<p>Join our live streams, virtual workshops, and the International Poop Trivia Championship!</p>
+		</article>
+		<article id="newsletter">
+			<h2>Newsletter Signup</h2>
+			<form id="newsletter-form">
+				<label>
+					Your email:
+					<input type="email" placeholder="you@example.com" />
+				</label>
+				<button type="button" onclick="subscribeNewsletter()">Subscribe</button>
+			</form>
+			<small>Your email is safe with us. No spam. Pinky promise.</small>
+		</article>
+		<article id="faqs">
+			<h2>Frequently Asked Questions</h2>
+			<details>
+				<summary>Is poop edible?</summary>
+				<p>Absolutely not. Trust us on this one.</p>
+			</details>
+			<details>
+				<summary>Why make a site about poop?</summary>
+				<p>Because someone had to do it, and we're clandestine researchers of bowel behavior.</p>
+			</details>
+			<details>
+				<summary>Why is poop brown?</summary>
+				<p>Bile pigments break down in your intestines, giving stool its distinctive color.</p>
+			</details>
+			<details>
+				<summary>Can I major in Poopology?</summary>
+				<p>Yes, at Cacayfri University (online campus coming soon). Enrollment is... rolling.</p>
+			</details>
+			<details>
+				<summary>Does my poop have a soul?</summary>
+				<p>Only on Tuesdays, and only if you've eaten tacos.</p>
+			</details>
+			<details>
+				<summary>Is it true that you can tell a person's personality from their poop?</summary>
+				<p>Only if they're an artist. Otherwise, it's just a crappy guess.</p>
+			</details>
+			<details>
+				<summary>What's the best music to poop to?</summary>
+				<p>We recommend anything by The Rolling Stones or anything with a heavy bass drop.</p>
+			</details>
+		</article>
+		<article id="contact">
+			<h2>Contact Us</h2>
+			<form id="contact-form">
+				<label>
+					Name:
+					<input type="text" />
+				</label>
+				<label>
+					Email:
+					<input type="email" />
+				</label>
+				<label>
+					Message:
+					<textarea rows="3"></textarea>
+				</label>
+				<button type="button" onclick="alert('Thanks for reaching out!')">Send</button>
+			</form>
+			<p>Follow us on <a href="#">Twitter</a>, <a href="#">Instagram</a>, and <a href="#">TikTok</a> for more daily dung updates.</p>
+		</article>
+		<article id="expert-interviews">
+			<h2>Expert Interviews</h2>
+			<p>We sat down—well, squatted—with the world's leading minds to flush out the truth.</p>
+			<h3>Featured Experts</h3>
+			<ul>
+				<li><strong>Prof. Linda Fecalia</strong>, Chair of Stoolistics at Caca University—maps toilet turbulence with AI-powered splash sensors.</li>
+				<li><strong>Sir Reginald Flushworth&nbsp;III</strong>, Royal Historian of Privy Affairs—claims King Henry&nbsp;VIII wrote breakup letters on parchment recycled from royal TP.</li>
+				<li><strong>Dr. Elon Poosk</strong>, Rocket-Propelled Relief Specialist—investigates zero-G bowel movements aboard the ISS ("It's all about the thrust vectoring").</li>
+				<li><strong>Stanksy</strong>, Anonymous Graffiti-Poop Artist—turns public restrooms into satirical galleries overnight.</li>
+			</ul>
+			<h3>Interview Highlights</h3>
+			<details>
+				<summary>Prof. Fecalia on Splash Dynamics</summary>
+				<p>"Our simulations show that a shallow bowl angle can cut backsplash by 42%. Unfortunately, it also doubles the acoustic resonance, making each plop sound like a timpani drum solo."</p>
+			</details>
+			<details>
+				<summary>Sir Flushworth on Historical Hygiene</summary>
+				<p>"Contrary to popular belief, medieval knights carried <em>poop swords</em>—essentially oversized spatulas—for battlefield emergencies."</p>
+			</details>
+			<details>
+				<summary>Dr. Poosk on Space Poop</summary>
+				<p>"In microgravity, every turd is technically an astronaut, free-floating and full of potential. We just try to keep them from achieving escape velocity."</p>
+			</details>
+			<details>
+				<summary>Stanksy on Art as Excrement</summary>
+				<p>"Art is subjective. Poop is objective. Combine the two, and you have a masterpiece people can smell from across the hall."</p>
+			</details>
 		</article>
 	</main>
 	<footer>
 		<p>&copy; 2025 Cacayfri - All rights reserved, including on your droppings. Yes, we own your poop now.</p>
 		<nav>
-			<a href="https://ayfri.com" rel="noopener noreferrer" target="_blank">The so-called "Author"</a>
+			<a href="https://ayfri.com">The so-called "Author"</a>
 		</nav>
 	</footer>
-	<script type="module" src="/src/main.js"></script>
 </body>
 </html>

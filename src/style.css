@@ -1,80 +1,18 @@
 /* Styles for Cacayfri */
 
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Open+Sans:wght@400;600&display=swap');
 
 :root {
-	--background-color: #fdf6e3;
-	--text-color: #3d2c1d;
-	--header-background-color: #f4eade;
-	--footer-background-color: #f4eade;
 	--accent-color: #a87e5e;
+	--background-color: #fdf6e3;
+	--footer-background-color: #f4eade;
+	--header-background-color: #f4eade;
 	--logo-color: #6b4a2f;
+	--text-color: #3d2c1d;
+	--body-font: 'Open Sans', sans-serif;
+	--heading-font: 'EB Garamond', serif;
+	--box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+	--transition-speed: 0.3s;
 }
 
-body {
-	background-color: var(--background-color);
-	color: var(--text-color);
-	font-family: 'EB Garamond', serif;
-	line-height: 1.6;
-	margin: 0;
-	padding: 0;
-}
-
-h1, h2 {
-	font-weight: 600;
-	text-align: center;
-}
-
-a {
-	color: var(--accent-color);
-}
-
-header {
-	background-color: var(--header-background-color);
-	border-bottom: 2px solid var(--logo-color);
-	padding: 1rem;
-	text-align: center;
-}
-
-header .logo {
-	margin: 0 auto;
-}
-
-header h1 {
-	font-size: 3rem;
-	margin: 0;
-}
-
-header p {
-	font-size: 1.2rem;
-	font-style: italic;
-	margin: 0;
-}
-
-main {
-	margin: 0 auto;
-	max-width: 800px;
-	padding: 2rem;
-}
-
-article {
-	border-bottom: 1px solid var(--accent-color);
-	margin-bottom: 2rem;
-	padding-bottom: 1rem;
-}
-
-article:last-child {
-	border-bottom: none;
-}
-
-footer {
-	background-color: var(--footer-background-color);
-	border-top: 2px solid var(--logo-color);
-	font-size: 0.9rem;
-	padding: 1rem;
-	text-align: center;
-}
-
-footer nav a {
-	margin: 0 1rem;
-}
+/* All other styles have been migrated to layout.css and components.css */

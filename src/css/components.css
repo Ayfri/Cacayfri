@@ -1,0 +1,156 @@
+/* Component styles for Cacayfri */
+
+/* Buttons */
+button {
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.7rem 1rem;
+  transition: background-color var(--transition-speed), transform var(--transition-speed);
+}
+button:hover {
+  background-color: var(--logo-color);
+  transform: translateY(-2px);
+}
+
+/* Form controls */
+input,
+select,
+textarea {
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  padding: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color var(--transition-speed);
+}
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--logo-color);
+  outline: none;
+}
+
+/* Article cards */
+article {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  margin-bottom: 2rem;
+  overflow: hidden;
+  padding: 1.5rem;
+  transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+article:hover {
+  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+  transform: translateY(-5px);
+}
+
+article h2::after {
+  content: "";
+  display: block;
+  margin: 0.5rem auto 1rem;
+  width: 60px;
+  height: 3px;
+  background-color: var(--accent-color);
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 4px solid var(--accent-color);
+  font-style: italic;
+  margin: 1.5rem 0;
+  padding: 0.5rem 1rem;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th,
+td {
+  border: 1px solid var(--accent-color);
+  padding: 0.5rem;
+  text-align: left;
+}
+tbody tr:hover {
+  background-color: rgba(168,126,94,0.1);
+}
+
+/* Blog posts */
+.blog-list {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.blog-post {
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  padding: 1rem;
+  transition: box-shadow var(--transition-speed);
+}
+.blog-post:hover {
+  box-shadow: var(--box-shadow);
+}
+
+/* FAQs */
+details {
+  margin-bottom: 1rem;
+}
+summary {
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0.5rem;
+}
+
+/* Shop list */
+#shop ul {
+  list-style: none;
+  padding: 0;
+}
+#shop li {
+  margin-bottom: 0.5rem;
+}
+
+/* Added navbar container styling */
+nav.sitemap {
+  background-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0;
+}
+
+/* Elegant outline pills for sitemap links */
+nav.sitemap ul li a {
+  background-color: transparent;
+  border: 1px solid var(--accent-color);
+  border-radius: 999px;
+  color: var(--accent-color);
+  font-family: var(--heading-font);
+  font-size: 0.85rem;
+  font-weight: 400;
+  padding: 0.2rem 0.7rem;
+  text-decoration: none;
+  transition: background-color var(--transition-speed), color var(--transition-speed), transform var(--transition-speed);
+  white-space: nowrap;
+}
+nav.sitemap ul li a:hover {
+  background-color: var(--accent-color);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  article {
+    padding: 1rem;
+  }
+
+  .blog-list {
+    grid-template-columns: 1fr;
+  }
+}

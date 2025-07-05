@@ -1,0 +1,154 @@
+/* Layout styles for Cacayfri */
+
+/* Header */
+header {
+  background: linear-gradient(135deg, var(--header-background-color), var(--background-color));
+  border-bottom: 2px solid var(--logo-color);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 0.5rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-top {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+header .logo {
+  height: 40px;
+  margin-bottom: 0;
+  width: 40px;
+}
+
+.title-group {
+  text-align: left;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+  text-align: left;
+}
+
+header p {
+  font-family: var(--body-font);
+  font-size: 0.9rem;
+  font-style: italic;
+  margin: 0;
+}
+
+/* Sitemap navigation */
+nav.sitemap ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  justify-content: center;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+nav.sitemap ul li a {
+  background-color: var(--accent-color);
+  border-radius: 20px;
+  color: #fff;
+  padding: 0.3rem 0.8rem;
+  text-decoration: none;
+  transition: background-color var(--transition-speed);
+  font-size: 0.9rem;
+}
+
+nav.sitemap ul li a:hover {
+  background-color: var(--logo-color);
+}
+
+/* Footer */
+footer {
+  background-color: var(--footer-background-color);
+  border-top: 2px solid var(--logo-color);
+  font-size: 0.9rem;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+footer p,
+footer nav {
+  margin: 0.5rem 0;
+}
+
+footer nav a {
+  margin: 0 1rem;
+}
+
+/* Global styles */
+body {
+  background-color: var(--background-color);
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23a87e5e' fill-opacity='0.1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+  color: var(--text-color);
+  font-family: var(--body-font);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  font-weight: 600;
+  text-align: center;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color var(--transition-speed);
+}
+
+a:hover {
+  color: var(--logo-color);
+  text-decoration: underline;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 3rem 1rem;
+}
+
+@media (max-width: 768px) {
+  .header-top {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .title-group {
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  main {
+    padding: 1.5rem 1rem;
+  }
+
+  nav.sitemap ul {
+    -ms-overflow-style: none; /* IE and Edge */
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scrollbar-width: none; /* Firefox */
+  }
+
+  nav.sitemap ul::-webkit-scrollbar {
+    display: none;
+  }
+}
