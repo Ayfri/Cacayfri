@@ -1,3 +1,5 @@
+import './style.css';
+
 // Script for Cacayfri
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -23,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	// Randomly annoy on clicks
 	document.body.addEventListener('click', function() {
 		const insults = [
-			'Stop poking around, it\'s just poop.',
+			'\u{1F4A9} Stop poking around, it\'s just poop.',
 			'You really clicked that? Bold move.',
 			'Congratulations, you clicked literally nothing of value.'
 		];
