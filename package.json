@@ -1,6 +1,6 @@
 {
 	"devDependencies": {
-		"vite": "^5.2.0"
+		"vite": "^7.0.2"
 	},
 	"name": "cacayfri",
 	"private": true,
